@@ -20,7 +20,7 @@
 
 .header-container {
   background-image: url("../../images/container-bg.png");
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 0px;
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -42,6 +42,58 @@
 .nav a {
   color: red;
   font-size: 14px;
+}
+
+.hero .hero-container {
+  background-image: url("../../images/container-bg.png");
+  border-radius: 0px 0px 10px 0px;
+  padding: 100px 35px 200px 35px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero .hero-container .hero-left {
+  color: rgb(201, 195, 195);
+  text-align: center;
+  width: 500px;
+}
+.hero .hero-container .hero-left .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero .hero-container .hero-left h2, .hero .hero-container .hero-left p {
+  margin-bottom: 20px;
+}
+.hero .hero-container .hero-left p {
+  font-size: 12px;
+}
+.hero .hero-container .hero-left .button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.hero .hero-container .hero-left button {
+  background-color: red;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero .hero-container .hero-left button:hover {
+  box-shadow: rgb(255, 0, 0) -5px 0px 10px 0px, rgb(255, 0, 0) -5px 0px 30px 10px;
+  transition: all 0.3s ease;
+}
+.hero .hero-container .hero-right img {
+  position: absolute;
+  top: -50px;
+  right: -80px;
+  width: 690px;
+  height: 543px;
 }
 
 *, *::before, *::after {
