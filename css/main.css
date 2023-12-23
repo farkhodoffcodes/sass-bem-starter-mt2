@@ -18,10 +18,42 @@
   padding: 0 20px;
 }
 
+.header-container {
+  background-image: url("../../images/container-bg.png");
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.header-container .logo {
+  margin-right: 55px;
+  width: 180px;
+  height: 88px;
+}
+.header-container .logo-end {
+  margin-left: auto;
+}
+
+.nav ol {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav a {
+  color: red;
+  font-size: 14px;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  padding: 50px 85px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
 }
 
 ol, ul {
